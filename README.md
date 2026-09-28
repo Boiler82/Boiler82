@@ -10,9 +10,13 @@ Currently looking for a LIA internship in Stockholm, December 2026 – June 2027
 
 **SQL** — Snowflake; window functions, CTEs, quintile scoring
 
-**Python**: pandas, matplotlib, requests, Jupyter
+**Python** — pandas, matplotlib, requests, Jupyter
 
 **Pipelines** — dbt, Apache Airflow, Azure Blob Storage
+
+**BI** — Looker Studio, Power BI, Tableau
+
+**Other** — Git, Excel / Google Sheets
 
 ---
 
