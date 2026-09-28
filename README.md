@@ -2,7 +2,7 @@
 
 Data Analyst student at Hyper Island in Stockholm, moving into analytics after 15+ years leading teams in hospitality across Italy and Sweden. I came to data from the operational side, reading daily numbers and making staffing and purchasing decisions from them and I'm drawn to analytics that supports people doing the same kind of work.
 
-Currently looking for a LIA internship in Stockholm, December 2026 – June 2027.
+Currently looking for a LIA internship in Stockholm, 7 December 2026 – 6 June 2027.
 
 ---
 
