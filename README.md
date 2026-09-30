@@ -12,9 +12,9 @@ Currently looking for a LIA internship in Stockholm, 7 December 2026 – 6 June 
 
 **Python** — pandas, matplotlib, requests, Jupyter
 
-**Pipelines** — dbt, Apache Airflow, Azure Blob Storage
+**Pipelines** — dbt, GitHub Actions, Apache Airflow, Azure Blob Storage
 
-**BI** — Looker Studio, Power BI, Tableau
+**BI** — Data Studio (formerly Looker Studio), Power BI, Tableau
 
 **Other** — Git, Excel / Google Sheets
 
@@ -28,7 +28,7 @@ Follows 11,026 songs that entered the chart from 2000 to 2024. In the streaming 
 
 **[lastfm-pipeline](https://github.com/Boiler82/lastfm-pipeline)**: end-to-end data pipeline
 
-Last.fm API → Python → Azure Blob Storage → Snowflake → dbt → Looker Studio, orchestrated with Apache Airflow. dbt models parse nested JSON, deduplicate with `ROW_NUMBER()`, and use `LAG()` to find day-over-day chart position drops. Built as the final project for Hyper Island's Data Engineering course.
+Last.fm API → Python → Snowflake → dbt → Data Studio, running every day on GitHub Actions. Built as the final project for Hyper Island's Data Engineering course on Airflow in Docker, then migrated to the cloud so it no longer depends on my laptop. dbt models parse nested JSON, deduplicate with `ROW_NUMBER()`, and use `LAG()` to find day-over-day chart position drops, checked by 15 automated tests. Snowflake access uses key-pair authentication and least-privilege roles, including a read-only user for the dashboard. [dbt docs & lineage graph](https://boiler82.github.io/lastfm-pipeline/)
 
 **[sql-customer-segmentation-rfm](https://github.com/Boiler82/sql-customer-segmentation-rfm)**: RFM segmentation in SQL
 
