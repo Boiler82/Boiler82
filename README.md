@@ -8,9 +8,11 @@ Currently looking for a LIA internship in Stockholm, 7 December 2026 – 6 June 
 
 ### Working with
 
-**SQL** — Snowflake; window functions, CTEs, quintile scoring
+**SQL** — Snowflake, SQLite; window functions, CTEs, quintile scoring
 
 **Python** — pandas, matplotlib, requests, Jupyter
+
+**AI** — Claude API, tool-using agents, LLM evaluation
 
 **Pipelines** — dbt, GitHub Actions, Apache Airflow, Azure Blob Storage
 
@@ -21,6 +23,10 @@ Currently looking for a LIA internship in Stockholm, 7 December 2026 – 6 June 
 ---
 
 ### Projects
+
+**[data-analyst-agent](https://github.com/Boiler82/data-analyst-agent)**: an AI agent that answers questions about e-commerce data
+
+Ask a question in plain English and the agent writes its own SQL, runs it on the Olist dataset (99,441 orders, 9 tables) and answers in words or with a chart. Built in Python with the Claude API, on a read-only database. I tested it on 15 questions with SQL answer keys: Claude Sonnet scored 15/15, while the smaller Claude Haiku scored 14/15. It fell into a trap where `customer_id` changes with every order, so it counted orders instead of people. One note about the data in the agent's instructions brought Haiku to 15/15. I also caught a chart showing revenue crashing to zero; the data simply ends in late 2018, so the agent now leaves out incomplete periods.
 
 **[billboard-25-year-analysis](https://github.com/Boiler82/billboard-25-year-analysis)**: 25 years of the Billboard Hot 100 in Python
 
@@ -33,11 +39,6 @@ Last.fm API → Python → Snowflake → dbt → Data Studio, running every day 
 **[sql-customer-segmentation-rfm](https://github.com/Boiler82/sql-customer-segmentation-rfm)**: RFM segmentation in SQL
 
 Customer segmentation on Snowflake's TPC-H dataset. Frequency and Monetary correlated at 0.94, making two of the three dimensions largely redundant, so I switched Monetary to average order value. The repo also covers a geographic pattern I had to retract once it turned out to be random variation, and the validation queries that catch each problem.
-
----
-### Also working on
-
-A data analyst agent in Python using the Claude API — answering business questions against a SQLite database, with an RFM segmentation model in SQL underneath.
 
 ---
 
